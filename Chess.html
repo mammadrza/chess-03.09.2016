@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+
+<script>
+
+
+// Gallereya bawladi
+
+//    var photos=["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg","img/8.jpg","img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg","img/8.jpg"];
+
+//    var info= ["menzere", "usaqlar", "tebiet","menzere", "usaqlar", "tebiet","menzere", "usaqlar", "tebiet","menzere", "usaqlar", "tebiet","menzere", "usaqlar", "tebiet","menzere", "usaqlar", "tebiet","menzere", "usaqlar", "tebiet","menzere", "usaqlar", "tebiet",]
+   
+// 	function createDiv(galleryWidth,divCount,columnCount,divHeight,margin){
+// 	document.write('<div class="gallery" style="width:'+galleryWidth+'px; margin:0 auto;">');
+		
+// 		for(i=0;i<photos.length;i++){
+
+
+
+// 			document.write('<div class="item" style="position:relative; width:'+(galleryWidth/columnCount - 2*margin) +'px; height:'+divHeight+'px; margin:'+margin+'px; float:left; overflow:hidden"><a href='+photos[i]+'><p style="position:absolute; top:20px; color:white;">'+info[i]+'</p><img style="width:100%; " src='+photos[i]+'></a></div>');
+// 		}
+	
+// 	document.write('</div>');
+// 	document.write('<div style="clear:both; height:'+margin+'px;"></div>')
+// 	}
+
+// createDiv(800,100,5,120,5);
+
+// Gallereya bitdi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// wahmat bawladi 
+
+
+
+// 	function hesab(){
+	// 	for(var z=0;z<64;z++){
+	// 		esas*=2
+	// 		cem=cem+esas
+	// 		document.write(esas + "<br>")
+
+	// 	}
+	// }
+		
+
+// function createDiv(galleryWidth,divCount,columnCount,divHeight,margin,esas,cem){
+		
+// 	document.write('<div class="gallery" style=" width: '+galleryWidth+'px; margin:0 auto;">');
+// 	for(var i=1;i<divCount;i++){
+// 			esas*=2
+// 			cem=cem+esas
+		
+	
+// 		document.write('<div class="item" style="background:gray; width:'+(galleryWidth/columnCount-2*margin)+'px; float:left;  height:'+divHeight+'px; margin:'+margin+'px;  overflow:hidden;">'+esas+'</div>')
+// 	}
+
+// 	document.write('</div>')
+
+
+// }
+// // hesab();
+// createDiv(800,65,8,96,2,1,0);
+
+
+
+
+
+
+
+
+
+
+
+// Sahmat bitdi
+
+
+
+
+
+
+
+
+
+// waxnat 2ci versiya bawladi 
+
+
+
+
+
+		
+	// 	function hesab(){
+	// 	for(var z=0;z<64;z++){
+	// 		esas*=2
+	// 		cem=cem+esas
+	// 		document.write(esas + "<br>")
+
+	// 	}
+	// }
+		
+
+function createDiv(galleryWidth,divCount,columnCount,divHeight,margin,say,cem,kutle,qiymet){
+		
+	document.write('<div class="gallery" style=" width: '+galleryWidth+'px; margin:0 auto;">');
+	for(var i=0;i<divCount;i++){
+			
+		kutle=say*32/1000000
+		
+	
+		document.write('<div class="item" style="background:gray; width:'+(galleryWidth/columnCount-2*margin)+'px; float:left;  height:'+divHeight+'px; margin:'+margin+'px;  overflow:hidden;"><p style="font-size:12px">xana N-'+(i+1)+' <br><br> '+say+' bugda <br><br> '+kutle+' kq <br><br> '+(qiymet*kutle/100)+' manat</p> </div>')
+		say*=2
+		cem=cem+say
+
+
+	}
+
+	document.write('</div>')
+
+
+}
+// hesab();
+createDiv(1200,64,8,148,2,1,0,32,50);
+
+
+
+
+// waxmat 2ci versiya bitdi
+
+</script>
+
+
+</body>
+</html>
